@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Result Summary</title>
+    <style>
+        body {
+            background-color: #e6f0ff; /* Light blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        .result {
+            background: linear-gradient(to bottom, #6743ff, #312ceb); /* Purple gradient */
+            color: white;
+            padding: 40px;
+            text-align: center;
+            width: 300px;
+            border-radius: 30px 0 0 30px;
+        }
+
+        .result h2 {
+            font-size: 18px;
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+
+        .score-circle {
+            background: linear-gradient(to bottom, #4c21ef, #4e21ef00); /* Darker purple gradient */
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px;
+        }
+
+        .score-circle .score {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .score-circle .total {
+            font-size: 16px;
+            opacity: 0.5;
+        }
+
+        .result h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .result p {
+            font-size: 14px;
+            opacity: 0.7;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+
+        .summary {
+            background-color: white;
+            padding: 40px;
+            width: 300px;
+            border-radius: 0 30px 30px 0;
+        }
+
+        .summary h2 {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #303b59;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .item .icon {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        .item .score {
+            margin-left: auto;
+            color: #303b59;
+            opacity: 0.5;
+        }
+
+        .item .score span {
+            opacity: 1;
+            color: #303b59;
+        }
+
+        .reaction {
+            background-color: #fff6f5;
+            color: #ff5757;
+        }
+
+        .reaction .icon {
+            color: #ff5757;
+        }
+
+        .memory {
+            background-color: #fffbf2;
+            color: #ffb21e;
+        }
+
+        .memory .icon {
+            color: #ffb21e;
+        }
+
+        .verbal {
+            background-color: #f2fbfa;
+            color: #00bb8f;
+        }
+
+        .verbal .icon {
+            color: #00bb8f;
+        }
+
+        .visual {
+            background-color: #f3f3fd;
+            color: #1125d6;
+        }
+
+        .visual .icon {
+            color: #1125d6;
+        }
+
+        button {
+            background-color: #303b59;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 15px;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #6743ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="result">
+            <h2>Your Result</h2>
+            <div class="score-circle">
+                <span class="score">76</span>
+                <span class="total">of 100</span>
+            </div>
+            <h3>Great</h3>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+        <div class="summary">
+            <h2>Summary</h2>
+            <div class="item reaction">
+                <span class="icon">⚡</span>
+                Reaction
+                <span class="score">80 / 100</span>
+            </div>
+            <div class="item memory">
+                <span class="icon">🧠</span>
+                Memory
+                <span class="score">92 / 100</span>
+            </div>
+            <div class="item verbal">
+                <span class="icon">💬</span>
+                Verbal
+                <span class="score">61 / 100</span>
+            </div>
+            <div class="item visual">
+                <span class="icon">👁️</span>
+                Visual
+                <span class="score">73 / 100</span>
+            </div>
+            <button>Continue</button>
+        </div>
+    </div>
+</body>
+</html>
